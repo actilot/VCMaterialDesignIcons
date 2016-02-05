@@ -9,7 +9,10 @@
 //
 
 #import "VCMaterialDesignIcons.h"
-#import <CoreText/CoreText.h>
+
+#ifdef os(iOS)
+  #import <CoreText/CoreText.h>
+#endif
 
 const struct VCMaterialDesignIconCode VCMaterialDesignIconCode = {
   .md_3d_rotation                        = @"\uf101",
@@ -767,6 +770,8 @@ const struct VCMaterialDesignIconCode VCMaterialDesignIconCode = {
 @end
 
 @implementation VCMaterialDesignIcons
+
+#ifdef os(iOS)
 
 + (void)initialize {
   if (self == VCMaterialDesignIcons.class) {
@@ -1585,5 +1590,6 @@ const struct VCMaterialDesignIconCode VCMaterialDesignIconCode = {
   VCMaterialDesignIconCode.md_voicemail,
   ];
 }
+#endif
 
 @end

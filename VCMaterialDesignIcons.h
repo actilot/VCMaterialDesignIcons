@@ -8,6 +8,8 @@
 //  Copyright (c) 2015 Fufu Labs. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 extern const struct VCMaterialDesignIconCode {
   __unsafe_unretained NSString *md_3d_rotation;
   __unsafe_unretained NSString *md_airplane_off;
@@ -757,6 +759,7 @@ extern const struct VCMaterialDesignIconCode {
 
 @interface VCMaterialDesignIcons : NSObject
 
+#ifdef os(iOS)
 // create icon for given code
 + (instancetype)iconWithCode:(NSString *)code fontSize:(CGFloat)fontSize;
 
@@ -774,5 +777,6 @@ extern const struct VCMaterialDesignIconCode {
 
 + (NSArray *)allIcons;
 
-@end
+#endif
 
+@end
