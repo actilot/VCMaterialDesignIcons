@@ -759,7 +759,7 @@ extern const struct VCMaterialDesignIconCode {
 
 @interface VCMaterialDesignIcons : NSObject
 
-#ifdef os(iOS)
+#if TARGET_OS_IOS
 // create icon for given code
 + (instancetype)iconWithCode:(NSString *)code fontSize:(CGFloat)fontSize;
 

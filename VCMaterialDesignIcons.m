@@ -10,7 +10,7 @@
 
 #import "VCMaterialDesignIcons.h"
 
-#ifdef os(iOS)
+#if TARGET_OS_IOS
   #import <CoreText/CoreText.h>
 #endif
 
@@ -771,7 +771,7 @@ const struct VCMaterialDesignIconCode VCMaterialDesignIconCode = {
 
 @implementation VCMaterialDesignIcons
 
-#ifdef os(iOS)
+#if TARGET_OS_IOS
 
 + (void)initialize {
   if (self == VCMaterialDesignIcons.class) {

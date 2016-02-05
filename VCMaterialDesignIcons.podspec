@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VCMaterialDesignIcons"
-  s.version      = "2.2.1"
+  s.version      = "2.2.2"
   s.summary      = "MaterialDesign icon api for IOS - Objective C"
   s.homepage     = "https://github.com/actilot/VCMaterialDesignIcons"
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "viktor calonia" => "viktoricalonia@yahoo.com" }
 
-  s.source       = { :git => "https://github.com/actilot/VCMaterialDesignIcons.git", :tag => "2.2.1"}
+  s.source       = { :git => "https://github.com/actilot/VCMaterialDesignIcons.git", :tag => "2.2.2"}
 
 
   s.source_files  = "*.{h,m}"
